@@ -3,6 +3,7 @@
 ## Project info
 
 **URL**: https://lovable.dev/projects/ef21a0ba-10d8-4af3-be1b-f9cfc6bedb47
+LINK TO CLOUD HOSTED INSTANCE (not always running): https://connectly-hackathonuob.onrender.com/
 
 ## How can I edit this code?
 
