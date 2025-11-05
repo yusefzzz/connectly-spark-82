@@ -35,7 +35,8 @@ export default function Profile() {
         `)
         .eq("creator_id", user!.id)
         .order("created_at", { ascending: false });
-
+      console.log("Data isss:");
+      console.log(data);
       return data?.map((event) => ({
         ...event,
         is_liked: event.event_likes?.some((l: any) => l.user_id === user?.id),
