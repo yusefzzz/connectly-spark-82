@@ -297,7 +297,7 @@ export default function CreateEvent() {
 
     setLoading(true);
     try {
-      const { error } = await supabase.from("events").insert({
+      const { data, error } = await supabase.from("events").insert({
         creator_id: user.id,
         title,
         description,
@@ -309,6 +309,8 @@ export default function CreateEvent() {
         image_url: imageUrl || null,
         tags: selectedTags,
       });
+      console.log("Insert data:", data);
+      console.log("Insert error:", error);
 
       if (error) throw error;
 
